@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="mediaqueries.css"/>
+    <style>
+        .text-container p {
+            text-align: justify;
+        }
+    </style>
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Aron Wilson Mathias</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#certifications">Certifications</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Aron Wilson Mathias</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>   
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#certification" onclick="toggleMenu()">Certifications</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+    <section id = 'profile'>
+        <div class="section__pic-container">
+            <img src = './assets/profilepic1.png' alt="Aron Wilson Mathias profile picture"/>
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Hello, I'm</p>
+            <h1 class="title">Aron Wilson MAthias</h1>
+            <p class="section__text__p2">Robotics and Automation</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('./assets/Aron Wilson Mathias.pdf')">
+                    Download CV
+                </button>
+                <button class="btn btn-color-1" onclick="location.href='./#contact'">
+                    Contact Info
+                </button>
+            </div>
+            <din id="socials-container">
+                <img src="./assets/linkedin.png" alt="My Linkedin profile"
+                class="icon" onclick="location.href = 'https://www.linkedin.com/in/am8466/'"
+                />
+                <img src="./assets/github.png" alt="My Github profile"
+                class="icon" onclick="location.href = 'https://github.com/Aron0709'"
+                />
+            </din>
+        </div>
+    </section>
+    <section id="about">
+            </div>
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img src="./assets/experience.png" 
+                        alt="Experience icon"
+                        class="icon"/>  
+                        <h3>Experience</h3>
+                        <p>1.Research Assistant<br />2.Robotics Techniciant<br />3.Technical Assistant</p</p>
+                    </div>
+                    </div>
+                    <div class="details-container">
+                        <img src="./assets/education.png" 
+                        alt="Education icon"
+                        class="icon"/>
+                        <h3>Education</h3>
+                        <p>1.ME Robotics and Automation <br />2.Bachelors in Technology and Science in Mechatronics</p>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p style="font-size: 0.9em;">Pursuing a Master's in Robotics and Automation at the University of Arizona, I am deeply committed to advancing robotics and automation technologies through hands-on research and development. Currently, I work in the SMART LAB under the mentorship of Prof. Hossein Rastgoftar, contributing to groundbreaking projects that push the boundaries of robotics innovation. My work includes designing quadcopters with configurable motion for precise operation, developing deformable UAVs for enhanced maneuverability and control, and building omni-directional robots with deformable structures tailored for safety and defense applications.
+
+                        As a Research Assistant, I have leveraged my expertise to design modular autonomous systems, such as a deformable ground unit using ROS2 and Python, and optimized motion planning for quadruped-guided UAVs using YOLOv8 and fluid flow navigation. My technical skills span Python, ROS2, TensorFlow, Scikit-learn, Simulink, MATLAB, and expertise in machine learning, statistical analysis, and robotics design. Additionally, I have addressed safety and reliability challenges as a Robotics Technician, ensuring operational compliance with safety protocols.
+                        
+                        My academic contributions include publications like “Quadcopter Team Configurable Motion Guided by a Quadruped,” accepted at the 18th International Conference on Control, Automation, Robotics, and Vision (ICARCV). Driven by a commitment to innovation and excellence, I aim to continue developing impactful, sustainable solutions that redefine the future of robotics and automation. Additionally, I am an active soccer player, proudly representing the University of Arizona.</p>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow"
+        onclick="location.href = './#experience'"/>
+    </section>  
+    <section id="experience">
+        <p class="section__text__p1">Professional</p>
+        <h1 class="title">Experience</h1>
+        <div class="experience-details-container">
+            <!-- Graduate Research Assistant Experience -->
+            <div class="details-container">
+                <h2 class="experience-sub-title">Research Assistant</h2>
+                <p class="experience-date">University of Arizona, Aerospace and Mechanical | JAN 2023 – Present</p>
+                <ul class="experience-list">
+                    <li>Deformable Ground Unit (DGU): Designed and developed a deformable ground unit leveraging affine transformations, ROS as the operating system, and Python for control and automation. Led the design, prototyping, and integration of modular components, incorporating ROS-based frameworks for enhanced mobility and adaptability in deformable robotic systems.</li>
+                    <li>Deformable Continuum UAV (DCU): Designed a UAV with a deformable continuum structure, enhancing maneuverability and stability through innovative control algorithms. Developed and tested control systems for structural deformation to ensure optimal performance under diverse conditions.</li>
+                    <li>Quadcopter Team Configurable Motion Guided by a Quadruped: Developed a quadcopter with configurable motion guided by a quadruped robot, integrating sensor data and control algorithms for stability. Collaborated with a team to optimize the quadcopter's performance across diverse environments..</li> 
+                </ul>
+            </div>
+    
+            <!-- Research Assistant Experience -->
+            <div class="details-container">
+                <h2 class="experience-sub-title">Robot Technician</h2>
+                <p class="experience-date">Internshipwala Careers | July 2021 – Aug 2021</p>
+                <ul class="experience-list">
+                    <li>Ensured compliance with safety protocols and regulations in the robotics field, safeguarding workers, equipment, and environments during robotic system operations.</li>
+                    <li>Identified potential hazards in robotics operations and implemented effective risk mitigation strategies to ensure a safe and efficient workplace.</li>
+                    <li>Focused on industrial safety to enhance the reliability and security of robotic systems while minimizing operational risks.</li>
+
+                </ul>
+            </div>
+    
+            <!-- Machine Learning Internship Experience -->
+            <div class="details-container">
+                <h2 class="experience-sub-title">Technical Assistant</h2>
+                <p class="experience-date">Fareast Marine Services India Private Limited| Nov 2019 – Dec 2019</p>
+                <ul class="experience-list">
+                    <li>Diagnosed and resolved technical issues in robotic systems, ensuring smooth operation and reliability of critical components.</li>
+                    <li>Collaborated on troubleshooting complex mechanical failures, such as motor and actuator malfunctions, to optimize system performance.</li>
+                    <li>Enhanced the operational efficiency of robotic systems through proactive maintenance and technical problem-solving</li>
+
+                </ul>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href = './#skills'"/>
+    </section>
+    
+    <section id="skills">
+        <p class="section__text__p1">Explore My</p>
+        <h1 class="title">Skills</h1>
+        <div class="skills-details-container">
+            <div class="about-containers">
+                <!-- Technical Skills Block -->
+                <div class="details-container">
+                    <h2 class="skills-sub-title">Technical Skills</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/checkmark.png" alt="" class=""/>
+                            <div>
+                                <h3>Python</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="" class=""/>
+                            <div>
+                                <h3>ROS and ROS2</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="" class=""/>
+                            <div>
+                                <h3>C#</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="" class=""/>
+                            <div>
+                                <h3>Machine Learning</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="" class=""/>
+                            <div>
+                                <h3>Matlab</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="" class=""/>
+                            <div>
+                                <h3>Simulink</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="" class=""/>
+                            <div>
+                                <h3>HTML</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="" class=""/>
+                            <div>
+                                <h3>CAD Modelling</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <!-- Tools & Soft Skills Block -->
+                <div class="details-container">
+                    <h2 class="skills-sub-title">Tools & Soft Skills</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/checkmark.png" alt="" class=""/>
+                            <div>
+                                <h3>ROS</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="" class=""/>
+                            <div>
+                                <h3>Fusion360</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="" class=""/>
+                            <div>
+                                <h3>AutoCad</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="" class=""/>
+                            <div>
+                                <h3>Solidworks 3D</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="" class=""/>
+                            <div>
+                                <h3>Ansys</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="" class=""/>
+                            <div>
+                                <h3>Data analysis</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="" class=""/>
+                            <div>
+                                <h3>Teamwork</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="" class=""/>
+                            <div>
+                                <h3>3D Modelling</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href = './#projects'"/>
+    </section>
+    <section id="projects">
+        <style>
+            .projects-grid-container {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+                gap: 20px;
+                padding: 20px;
+            }
+    
+            /* Each project card has a gradient background and some styling */
+            .project-card {
+                background: linear-gradient(135deg, #007bff 0%, #00bfff 100%);
+                border-radius: 8px;
+                color: #fff;
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+                
+                /* Flex layout to anchor the button at the bottom */
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+    
+                /* Fixed height ensures uniform card dimensions */
+                min-height: 220px; /* Adjust as needed */
+                padding: 20px;
+                
+                /* Smooth hover transition */
+                transition: transform 0.3s ease, box-shadow 0.3s ease;
+            }
+    
+            /* Hover effect for a subtle lift */
+            .project-card:hover {
+                transform: translateY(-5px);
+                box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+            }
+    
+            /* Project title styling */
+            .project-title {
+                margin: 10px 0 15px 0;
+                font-size: 1.1rem;
+                font-weight: bold;
+            }
+    
+            /* Styling for the project button */
+            .project-btn {
+                background-color: #ffffff;
+                color: #007bff;
+                border: none;
+                padding: 10px 15px;
+                border-radius: 5px;
+                cursor: pointer;
+                transition: background-color 0.3s ease, color 0.3s ease;
+                font-weight: 600;
+                margin-top: auto; /* Keeps the button pinned to the bottom */
+            }
+    
+            .project-btn:hover {
+                background-color: #007bff;
+                color: #ffffff;
+            }
+        </style>
+    
+        <p class="section__text__p1">Browse My Recent</p>
+        <h1 class="title">Projects</h1>
+    
+        <div class="projects-grid-container">
+            <!-- Project 1 -->
+            <div class="project-card">
+                <h2 class="project-title">Quadcopter Team Configurable Motion Guided by a Quadruped</h2>
+                <button 
+                    class="btn project-btn" 
+                    onclick="location.href='https://https://www.youtube.com/watch?v=8_rDcQfNMUE'"
+                >
+                    View Project
+                </button>
+            </div>
+    
+            <!-- Project 2 -->
+            <div class="project-card">
+                <h2 class="project-title">Deformable Ground Unit (DGU)</h2>
+                <button 
+                    class="btn project-btn" 
+                    onclick="location.href='https://drive.google.com/drive/folders/1iC7jTi6o7JxnjRkcNPe9ruANJbosUHoA?usp=sharing'"
+                >
+                    View Project
+                </button>
+            </div>
+    
+            <!-- Project 3 -->
+            <div class="project-card">
+                <h2 class="project-title">Robotic Navigation and coordination Platform using Hexacopter and quadruped</h2>
+                <button 
+                    class="btn project-btn" 
+                    onclick="location.href='https://drive.google.com/drive/folders/1D3f9zMAJol32joUFCW4L6jTIRlEsRvwl?usp=sharing'"
+                >
+                    View Project
+                </button>
+            </div>
+    
+            <!-- Project 4 -->
+            <div class="project-card">
+                <h2 class="project-title">Deformable Continuum UAV  (DCU)</h2>
+                <button 
+                    class="btn project-btn" 
+                    onclick="location.href='https://drive.google.com/drive/folders/1yrIOoZbNsl_VECUaAV0hw7UxAgo4Emqt?usp=sharing'"
+                    >
+                    View Project
+                </button>
+            </div>
+    
+            <!-- Project 5 -->
+            <div class="project-card">
+                <h2 class="project-title">Fabrication of Animatronics Hnad</h2>
+                <button 
+                    class="btn project-btn" 
+                    onclick="location.href='https://drive.google.com/drive/folders/1rT9eh58mmnOY6wvRngNsu-VedVcCrnVk?usp=sharing'"
+                    >
+                    View Project
+                </button>
+            </div>
+    
+            <!-- Project 6 -->
+            <div class="project-card">
+                <h2 class="project-title">Autonomous Rover Navigation System Using Modular ROS Nodes</h2>
+                <button 
+                    class="btn project-btn" 
+                    onclick="location.href='https://drive.google.com/drive/folders/1S1bu9ZSBwAOQT9v61zci-mHwm5sXqz85?usp=sharing'"
+                    >
+                    View Project
+                </button>
+            </div>
+    
+            <!-- Project 7 -->
+            <div class="project-card">
+                <h2 class="project-title">Smart Integrated Mobility Solutions Transportation</h2>
+                <button 
+                    class="btn project-btn" 
+                    onclick="location.href='https://drive.google.com/drive/folders/1clO_A7gOkYkEvYk32QqwqppNJK-nu7sX?usp=sharing'"
+                >
+                    View Project
+                </button>
+            </div>
+        </div>
+    </section>
+     
+    
+    
+    <section id="certifications">
+        <p class="section__text__p1">My</p>
+        <h1 class="title">Certifications</h1>
+        <div class="certification-container">
+            <!-- LinkedIn Certification -->
+            <div class="certification-entry">
+                <div class="certification-left">
+                    <img src="" alt="" class=""/>
+                    <h3>PLC Siemens</h3>
+                </div>
+                <p class="certification-date">Udemy FEB 2023</p>
+            </div>
+            <!-- Coursera Certification -->
+            <div class="certification-entry">
+                <div class="certification-left">
+                    <img src="" alt="" class=""/>
+                    <h3>System Engineering-Theory and Practice-IIT Kanpur</h3>
+                </div>
+                <p class="certification-date">NPTL -IIT Kanpur - Issued Jan 2021</p>
+            </div>
+            <!-- Udemy Certification 1 -->
+            <div class="certification-entry">
+                <div class="certification-left">
+                    <img src="" alt="" class=""/>
+                    <h3>Intelligent Machining</h3>
+                </div>
+                <p class="certification-date">University of Buffalo- Issued Dec 2020</p>
+            </div>
+            <!-- Udemy Certification 2 -->
+            <div class="certification-entry">
+                <div class="certification-left">
+                    <img src="" alt="" class=""/>
+                    <h3>Python Online Certification</h3>
+                </div>
+                <p class="certification-date">Udemy - Issued Jan 2020</p>
+            </div>
+            <!-- Google Developers Certification -->
+            <div class="certification-entry">
+                <div class="certification-left">
+                    <img src="" alt="" class=""/>
+                    <h3>Robot Operating Systems (ROS) Udemy</h3>
+                </div>
+                <p class="certification-date">Udemy</p>
+            </div>
+            <!-- HackerRank Certification -->
+            <div class="certification-entry">
+                <div class="certification-left">
+                    <img src="" alt="" class=""/>
+                    <h3>Solid works</h3>
+                </div>
+                <p class="certification-date">Udemy</p>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href = './#contact'"/>
+    </section>
+    <section id="contact">
+        <p class="section__text__p1">
+            Get in Touch
+        </p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img src="./assets/email.png" alt="" class="icon contact-icon email-icon"/>
+                <p><a href="mailto:aronmathias@arizona.edu">aronmathias@arizona.edu</a></p>
+            </div>
+            <div class="contact-info-container">
+                <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon"/>
+                <p><a href="https://www.linkedin.com/in/am8466/">LinkedIn</a></p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#certifications">Certifications</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p>Copyright &#169; 2024 Aron Wilson Mathias. All Rights Reserved</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
